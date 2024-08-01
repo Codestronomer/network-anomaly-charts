@@ -19,14 +19,21 @@
 }
 
 .chart-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  gap: 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.chart-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  height: 800px;
   margin: 0 auto;
 }
 

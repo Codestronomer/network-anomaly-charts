@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import TrafficChart from "./components/TrafficChart";
 import GeneralChart from "./components/generalChart";
 import "./App.css";
+import BarChart from "./components/BarChart";
+import PieChart from "./components/PieChart";
 
 const App = () => {
   const [chartData, setChartData] = useState([]);
@@ -106,6 +108,13 @@ const App = () => {
               <TrafficChart data={paginatedData} metric={metric} label={metric} />
             </div>
           ))}
+          <h1>Other charts: </h1>
+          <div className="chart-container">
+            <PieChart data={chartData} />
+            <div className="chart-item">
+              <BarChart data={chartData} />
+            </div>
+          </div>
         </div>
       ) : (
         <p>No data available</p>
